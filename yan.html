@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	var str = '';
+	for(var i=0;i<6;i++){
+		var num = parseInt(48+Math.random()*75);
+		if(num>=58&&num<=64||num>=91&&num<=96){
+			i--;
+		}else {
+			str+=String.fromCharCode(num);
+		}
+	}
+	console.log(str);
+</script>
